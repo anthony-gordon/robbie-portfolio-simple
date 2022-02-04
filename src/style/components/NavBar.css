@@ -1,0 +1,9 @@
+.NavBar {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
