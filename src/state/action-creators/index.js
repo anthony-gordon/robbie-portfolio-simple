@@ -24,3 +24,21 @@ export const updateArtworkList = (data) => {
     });
   };
 };
+
+export const updateWindowSize = (data) => {
+  return (dispatch) => {
+    dispatch({
+      type: "updateWindowSize",
+      payload: data,
+    });
+  };
+};
+
+export const updateLoading = (data) => {
+  return (dispatch) => {
+    dispatch({
+      type: "updateLoading",
+      payload: data,
+    });
+  };
+};

@@ -3,6 +3,7 @@ import "../style/components/NavMenu.css";
 import NavMenuLi from "./../sub-components/NavMenuLi";
 import { useSelector } from "react-redux";
 import { animated as a, useSpring } from "react-spring";
+import { v4 as uuidv4 } from "uuid";
 
 function NavMenu() {
   let { scrollBarWidth, navBarHeight, menuOpacity, menuDisplay } = useSelector(
@@ -23,15 +24,19 @@ function NavMenu() {
   const menuItems = [
     {
       words: ["Artist", "Statement"],
+      link: "/artworks/1",
     },
     {
       words: ["Links"],
+      link: "/artworks/1",
     },
     {
       words: ["Portfolio"],
+      link: "/artworks/1",
     },
     {
       words: ["Contact"],
+      link: "/artworks/1",
     },
   ];
 
@@ -42,7 +47,7 @@ function NavMenu() {
     >
       <ul className="NavMenu__ul">
         {menuItems.map((menuItem) => {
-          return <NavMenuLi menuItem={menuItem} />;
+          return <NavMenuLi key={uuidv4()} menuItem={menuItem} />;
         })}
       </ul>
     </a.nav>

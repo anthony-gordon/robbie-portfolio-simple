@@ -7,3 +7,11 @@
   margin: auto;
   margin-bottom: 20px;
 }
+
+.ArtworkGridItem__caption {
+  color: black;
+}
+
+.ArtworkGridItem__link {
+  text-decoration: none;
+}

@@ -1,0 +1,16 @@
+.ArtworkListPage .ArtworkGrid {
+  margin-bottom: 0px;
+}
+
+.ArtworkListPage {
+  margin: auto;
+  margin-bottom: 100px;
+  background-color: white;
+  max-width: 300px;
+}
+
+@media only screen and (min-width: 769px) {
+  .ArtworkListPage {
+    max-width: 640px;
+  }
+}
