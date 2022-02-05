@@ -1,12 +1,12 @@
 import NavBar from "./components/NavBar";
 import NavMenu from "./components/NavMenu";
-import ArtworkGrid from "./components/ArtworkGrid";
 import Footer from "./components/Footer";
 import Axios from "axios";
 import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { bindActionCreators } from "redux";
 import { actionCreators } from "./state/index";
+import SiteRoutes from "./SiteRoutes";
 
 function RobbiePortfolioSiteSimple() {
   const dispatch = useDispatch();
@@ -32,7 +32,7 @@ function RobbiePortfolioSiteSimple() {
     <div className="RobbiePortfolioSiteSimple">
       <NavBar />
       <NavMenu />
-      <ArtworkGrid />
+      <SiteRoutes />
       <Footer />
     </div>
   );

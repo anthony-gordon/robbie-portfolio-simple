@@ -1,0 +1,10 @@
+.ArtworkPage__image {
+  width: 100%;
+}
+
+.ArtworkPage {
+  padding-top: 100px;
+  width: 300px;
+  margin: auto;
+  margin-bottom: 20px;
+}
