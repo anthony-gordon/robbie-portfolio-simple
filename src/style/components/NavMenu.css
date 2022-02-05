@@ -5,7 +5,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #ffd035;
+  background-color: white;
   transform: translate3d(0, 100vh, 0);
   visibility: hidden;
   overflow-y: hidden;

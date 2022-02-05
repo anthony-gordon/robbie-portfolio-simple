@@ -1,7 +1,7 @@
 .NavHamburgerIcon {
   display: flex;
   align-items: center;
-  margin-left: 2rem;
+  margin: auto;
   height: 50px;
 }
 
@@ -111,16 +111,4 @@
 .NavHamburgerIcon__wrapper--open span:nth-child(6) {
   left: calc(50% - 0.156rem);
   top: 0.906rem;
-}
-
-@media only screen and (max-width: 1024px) {
-  .NavHamburgerIcon {
-    margin-left: auto;
-  }
-}
-
-@media only screen and (max-width: 764px) {
-  .NavHamburgerIcon {
-    margin: auto;
-  }
 }

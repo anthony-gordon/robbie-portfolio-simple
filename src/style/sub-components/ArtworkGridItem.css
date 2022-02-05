@@ -1,0 +1,9 @@
+.ArtworkGridItem__image {
+  width: 100%;
+}
+
+.ArtworkGridItem {
+  width: 300px;
+  margin: auto;
+  margin-bottom: 20px;
+}

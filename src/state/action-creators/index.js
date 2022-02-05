@@ -15,3 +15,12 @@ export const toggleMenuOpacity = (data) => {
     });
   };
 };
+
+export const updateArtworkList = (data) => {
+  return (dispatch) => {
+    dispatch({
+      type: "updateArtworkList",
+      payload: data,
+    });
+  };
+};
