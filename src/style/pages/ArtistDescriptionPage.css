@@ -13,8 +13,8 @@
   margin-bottom: 50px;
 }
 
-.ArtistDescriptionPage .c3 {
-  letter-spacing: 2px;
+.ArtistDescriptionPage h3 {
+  letter-spacing: 2px !important;
 }
 
 @media only screen and (min-width: 769px) {
