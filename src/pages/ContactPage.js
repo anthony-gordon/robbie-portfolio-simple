@@ -1,5 +1,6 @@
 import "../style/pages/ContactPage.css";
 import ContactForm from "../components/ContactForm";
+import BackLink from "../sub-components/BackLink";
 import { Helmet } from "react-helmet-async";
 
 function ContactPage() {
@@ -14,6 +15,7 @@ function ContactPage() {
       </Helmet>
       <h2 className="ContactPage__h2">Get in contact</h2>
       <ContactForm />
+      <BackLink text={"Back to landing page"} link={`/`} />
     </div>
   );
 }

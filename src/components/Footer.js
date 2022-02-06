@@ -1,6 +1,6 @@
 import "../style/components/Footer.css";
-import FacebookIcon from "@material-ui/icons/Facebook";
-import InstagramIcon from "@material-ui/icons/Instagram";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
 
 function Footer() {
   return (
@@ -9,7 +9,7 @@ function Footer() {
         <div className="Footer__icons-wrapper">
           <a
             className="Footer__social-link"
-            href="https://www.facebook.com/Rmotionar"
+            href="https://www.facebook.com/Rmotionart"
             target="_blank"
             rel="noopener noreferrer"
           >

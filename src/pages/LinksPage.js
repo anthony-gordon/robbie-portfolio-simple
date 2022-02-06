@@ -1,6 +1,6 @@
 import "../style/pages/LinksPage.css";
 import { Helmet } from "react-helmet-async";
-
+import LinksPageLink from "../sub-components/LinksPageLink";
 import { useSelector } from "react-redux";
 
 function LinksPage() {
@@ -19,11 +19,7 @@ function LinksPage() {
         <h2 className="LinksPage__h2">Links</h2>
         <ul className="LinksPage__ul">
           {links.map((link, index) => (
-            <li key={index} className="LinksPage__li">
-              <a className="LinksPage__link" href={`${link.url}`}>
-                {link.text}
-              </a>
-            </li>
+            <LinksPageLink key={index} link={link} />
           ))}
         </ul>
       </div>

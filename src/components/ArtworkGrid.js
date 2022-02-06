@@ -1,10 +1,9 @@
 import "../style/components/ArtworkGrid.css";
 import { useSelector } from "react-redux";
 import ArtworkGridItem from "../sub-components/ArtworkGridItem";
-import Loading from "./../sub-components/Loading";
 
 function ArtworkGrid({ artworkList }) {
-  let { windowSize, loading } = useSelector((state) => state);
+  let { windowSize } = useSelector((state) => state);
 
   return (
     <div className="ArtworkGrid">

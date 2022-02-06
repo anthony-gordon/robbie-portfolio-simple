@@ -1,19 +1,58 @@
 .LinksPage {
   padding-top: 100px;
   margin-bottom: 100px;
+  background-color: white;
 }
 
 .LinksPage__wrapper {
   width: 300px;
   margin: auto;
+  padding-bottom: 50px;
 }
 
 .LinksPage__h2 {
   text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.LinksPage__ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.LinksPage__li {
+  list-style: none;
+  padding: 10px 20px;
+  color: black;
+  background-color: white;
+  border-radius: 5px;
+  border: 2px solid black;
+  margin-bottom: 10px;
+}
+
+.LinksPage__link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.LinksPage__link-text {
+  max-width: 200px;
 }
 
 @media only screen and (min-width: 769px) {
   .LinksPage__wrapper {
     width: 640px;
+  }
+
+  .LinksPage__link-text {
+    max-width: 540px;
   }
 }

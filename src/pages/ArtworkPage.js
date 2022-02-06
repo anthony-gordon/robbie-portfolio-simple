@@ -29,7 +29,7 @@ function ArtworkPage({ currentArtwork, page }) {
           </p>
         </div>
       </div>
-      <BackLink text={"Back to all artworks"} link={`/artworks/${page}`} />
+      <BackLink text={"Back to all"} link={`/artworks/${page}`} />
     </div>
   ) : (
     ""
