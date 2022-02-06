@@ -1,0 +1,11 @@
+h2 {
+  font-size: 20px;
+  margin-block-start: 10px;
+  margin-block-end: 10px;
+}
+
+h4,
+p {
+  margin-block-start: 10px;
+  margin-block-end: 10px;
+}

@@ -23,12 +23,12 @@ function NavMenu() {
 
   const menuItems = [
     {
-      words: ["Artist", "Statement"],
-      link: "/artworks/1",
+      words: ["About"],
+      link: "/about",
     },
     {
       words: ["Links"],
-      link: "/artworks/1",
+      link: "/links",
     },
     {
       words: ["Portfolio"],
@@ -36,7 +36,7 @@ function NavMenu() {
     },
     {
       words: ["Contact"],
-      link: "/artworks/1",
+      link: "/contact",
     },
   ];
 

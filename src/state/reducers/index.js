@@ -5,6 +5,8 @@ import toggleMenuDisplayReducer from "./toggleMenuDisplayReducer";
 import updateArtworkListReducer from "./updateArtworkListReducer";
 import updateWindowSizeReducer from "./updateWindowSizeReducer";
 import updateLoadingReducer from "./updateLoadingReducer";
+import updateArtistDescriptionReducer from "./updateArtistDescriptionReducer";
+import updateLinksReducer from "./updateLinksReducer";
 
 const reducers = combineReducers({
   menuDisplay: toggleMenuDisplayReducer,
@@ -12,6 +14,8 @@ const reducers = combineReducers({
   artworkList: updateArtworkListReducer,
   windowSize: updateWindowSizeReducer,
   loading: updateLoadingReducer,
+  artistDescription: updateArtistDescriptionReducer,
+  links: updateLinksReducer,
 });
 
 export default reducers;

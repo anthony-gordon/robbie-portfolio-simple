@@ -4,14 +4,11 @@ import { Link } from "react-router-dom";
 
 function NavLogo() {
   return (
-    <div className="NavLogo">
+    <h1 className="NavLogo">
       <Link to={`/`}>
-        <NavBarLogoImage
-          alt="Nav bar logo image"
-          className="NavBar__logo-image"
-        />
+        <NavBarLogoImage alt="Robbie Motion" className="NavBar__logo-image" />
       </Link>
-    </div>
+    </h1>
   );
 }
 

@@ -1,0 +1,19 @@
+.LinksPage {
+  padding-top: 100px;
+  margin-bottom: 100px;
+}
+
+.LinksPage__wrapper {
+  width: 300px;
+  margin: auto;
+}
+
+.LinksPage__h2 {
+  text-align: center;
+}
+
+@media only screen and (min-width: 769px) {
+  .LinksPage__wrapper {
+    width: 640px;
+  }
+}

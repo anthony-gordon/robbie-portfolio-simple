@@ -25,6 +25,24 @@ export const updateArtworkList = (data) => {
   };
 };
 
+export const updateArtistDescription = (data) => {
+  return (dispatch) => {
+    dispatch({
+      type: "updateArtistDescription",
+      payload: data,
+    });
+  };
+};
+
+export const updateLinks = (data) => {
+  return (dispatch) => {
+    dispatch({
+      type: "updateLinks",
+      payload: data,
+    });
+  };
+};
+
 export const updateWindowSize = (data) => {
   return (dispatch) => {
     dispatch({

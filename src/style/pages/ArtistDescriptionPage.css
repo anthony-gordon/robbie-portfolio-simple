@@ -1,0 +1,17 @@
+.ArtistDescriptionPage {
+  padding-top: 100px;
+  margin: auto;
+  background: white;
+  margin-bottom: 100px;
+  width: 300px;
+  padding-bottom: 50px;
+}
+.ArtistDescriptionPage__HTML-wrapper {
+  margin-bottom: 50px;
+}
+
+@media only screen and (min-width: 769px) {
+  .ArtistDescriptionPage {
+    width: 640px;
+  }
+}

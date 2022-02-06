@@ -11,8 +11,13 @@ import SiteRoutes from "./SiteRoutes";
 function RobbiePortfolioSiteSimple() {
   const dispatch = useDispatch();
 
-  const { updateArtworkList, updateWindowSize, updateLoading } =
-    bindActionCreators(actionCreators, dispatch);
+  const {
+    updateArtworkList,
+    updateArtistDescription,
+    updateWindowSize,
+    updateLoading,
+    updateLinks,
+  } = bindActionCreators(actionCreators, dispatch);
 
   function sort_by_key(array, key) {
     return array.sort(function (a, b) {
@@ -35,6 +40,31 @@ function RobbiePortfolioSiteSimple() {
           updateArtworkList(sort_by_key(artworkData, "year").reverse());
         });
       updateLoading(false);
+    }
+    getData();
+  }, []);
+
+  useEffect(() => {
+    async function getData() {
+      const response = await Axios.get(
+        `https://docs.google.com/document/d/1HRDKzXJ9W6k-6RvINszCcPrv6tJERWoFhxjFuHgF1rY/export?format=html`
+      );
+      updateArtistDescription(response);
+    }
+    getData();
+  }, []);
+
+  useEffect(() => {
+    async function getData() {
+      const response = await Axios.get(
+        `https://docs.google.com/spreadsheets/d/1dyCbcomB1gi9sDEaKPCCVJaV6xfSp15FcDuV2NxNKmo/export?format=csv`
+      );
+      const csv = require("csvtojson");
+      csv()
+        .fromString(response.data)
+        .then((Links) => {
+          updateLinks(sort_by_key(Links, "year").reverse());
+        });
     }
     getData();
   }, []);

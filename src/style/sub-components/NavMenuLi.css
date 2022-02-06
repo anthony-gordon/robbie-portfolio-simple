@@ -22,7 +22,8 @@
   border: none;
   margin-bottom: 20px;
   flex-direction: column;
-  font-family: Big Daily Short, georgia;
+  letter-spacing: 2px;
+  font-weight: 700;
   opacity: 1;
   transform: translateZ(0);
   max-width: 260px;
@@ -32,7 +33,7 @@
   font-size: 2.4rem;
   text-align: center;
   font-style: italic;
-  font-family: "Judson", serif;
+  /* font-family: "Judson", serif; */
   text-transform: none;
   margin: 0;
 }
@@ -51,5 +52,5 @@
 }
 
 .NavMenu__title-span--bold {
-  font-family: "Archivo Black", sans-serif;
+  /* font-family: "Archivo Black", sans-serif; */
 }

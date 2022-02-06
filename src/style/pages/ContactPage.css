@@ -1,0 +1,25 @@
+.ContactPage {
+  padding-top: 100px;
+  margin-bottom: 100px;
+  background-color: white;
+}
+
+.ContactPage .ContactPage__h2 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.ContactPage .ContactForm {
+  width: 300px;
+  margin: auto;
+  padding-bottom: 50px;
+}
+
+@media only screen and (min-width: 769px) {
+  .ContactPage .ContactForm {
+    width: 640px;
+  }
+}
