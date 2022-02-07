@@ -1,7 +1,7 @@
 import "../style/sub-components/NavMenuLi.css";
 import { v4 as uuidv4 } from "uuid";
 import { Link } from "react-router-dom";
-
+import { useSpring, animated as a } from "react-spring";
 import { useSelector, useDispatch } from "react-redux";
 import { bindActionCreators } from "redux";
 import { actionCreators } from "./../state/index";
@@ -13,6 +13,12 @@ function NavMenuLi({ menuItem }) {
   const { toggleMenuDisplay, toggleMenuOpacity } = bindActionCreators(
     actionCreators,
     dispatch
+  );
+
+  const [elementHoverLetterSpacing, setElementHoverLetterSpacing] = useSpring(
+    () => ({
+      letterSpacing: "2px",
+    })
   );
 
   function toggleMenuDisplayOpacity() {
@@ -32,10 +38,29 @@ function NavMenuLi({ menuItem }) {
     <li className="NavMenu__li">
       <Link to={menuItem.link} className="NavMenu__button">
         <p onClick={toggleMenuDisplayOpacity} className="NavMenu__title">
-          {menuItem.words.map((word, index) => (
-            <span key={uuidv4()} className={`NavMenu__title-span `}>
+          {menuItem.words.map((word) => (
+            <a.span
+              style={elementHoverLetterSpacing}
+              onMouseEnter={() =>
+                setElementHoverLetterSpacing({
+                  letterSpacing: "5px",
+                })
+              }
+              onMouseLeave={() =>
+                setElementHoverLetterSpacing({
+                  letterSpacing: "2px",
+                })
+              }
+              onClick={() =>
+                setElementHoverLetterSpacing({
+                  letterSpacing: "2px",
+                })
+              }
+              key={uuidv4()}
+              className={`NavMenu__title-span `}
+            >
               {`${word} `}
-            </span>
+            </a.span>
           ))}
         </p>
       </Link>
