@@ -28,6 +28,11 @@ function SiteRoutes() {
     return <ArtworkPage page={page} currentArtwork={currentArtwork} />;
   }
 
+  function RedirectToExternal() {
+    window.location.replace("https://robbie-motion-art.myshopify.com/");
+    return null;
+  }
+
   function GetArtworkListPage() {
     let params = useParams();
     let pageNumber = params.pageNumber;
@@ -62,6 +67,7 @@ function SiteRoutes() {
       <Route path="/about" element={<ArtistDescriptionPage />} />
       <Route path="/contact" element={<ContactPage />} />
       <Route path="/links" element={<LinksPage />} />
+      <Route path="/shop" element={<RedirectToExternal />} />
       <Route path="*" element={<Navigate to="/" />} />
     </Routes>
   );

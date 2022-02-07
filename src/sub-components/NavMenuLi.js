@@ -36,7 +36,12 @@ function NavMenuLi({ menuItem }) {
   }
   return (
     <li className="NavMenu__li">
-      <Link to={menuItem.link} className="NavMenu__button">
+      <Link
+        target={menuItem.internal ? "" : "_blank"}
+        rel={menuItem.internal ? "" : "noopener noreferrer"}
+        to={menuItem.link}
+        className="NavMenu__button"
+      >
         <p onClick={toggleMenuDisplayOpacity} className="NavMenu__title">
           {menuItem.words.map((word) => (
             <a.span

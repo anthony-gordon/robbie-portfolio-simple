@@ -25,18 +25,27 @@ function NavMenu() {
     {
       words: ["About"],
       link: "/about",
+      internal: true,
     },
     {
       words: ["Links"],
       link: "/links",
+      internal: true,
     },
     {
       words: ["Portfolio"],
       link: "/artworks/1",
+      internal: true,
     },
     {
       words: ["Contact"],
       link: "/contact",
+      internal: true,
+    },
+    {
+      words: ["Shop"],
+      link: "/shop",
+      internal: false,
     },
   ];
 
